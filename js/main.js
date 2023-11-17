@@ -13,6 +13,7 @@ nextButton.addEventListener("click", () => {
 
     if (nextStep != null) {
         currentStep.removeAttribute("aria-current")
+        currentStep.setAttribute("data-complete", "true")
         nextStep.setAttribute("aria-current", "step")
         changeStep()
     }
@@ -24,6 +25,7 @@ backButton.addEventListener("click", () => {
 
     if (prevStep != null) {
         currentStep.removeAttribute("aria-current")
+        prevStep.removeAttribute("data-complete")
         prevStep.setAttribute("aria-current", "step")
         changeStep()
     }

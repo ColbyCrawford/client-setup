@@ -16,13 +16,15 @@
 
 input {
     inline-size: 100%;
-    padding-block: 1rem;
+    padding: 0.75rem;
+    border: 1px solid hsl(208, 7%, 46%);
+    border-radius: 0.25rem;
 }
 
 input::placeholder {
     font-size: 1rem;
-    font-weight: 500;
-    color: #ADB5BD;
+    color: hsl(208, 7%, 46%);
+    opacity: 1;
 }
 
 button {
