@@ -1,0 +1,32 @@
+:root {
+    --ff-primary: "Inter", sans-serif;
+
+    --fw-medium: 500;
+}
+
+body {
+    font-family: var(--ff-primary);
+    color: #495057;
+}
+
+.heading-1 {
+    font-size: 2.75rem;
+    line-height: 1;
+    font-weight: var(--fw-medium);
+}
+
+.heading-2 {
+    font-size: 1.75rem;
+    line-height: 1.14285;
+    font-weight: var(--fw-medium);
+}
+
+.heading-5 {
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+.body-text-1 {
+    font-size: 1.125rem;
+    line-height: 1.33333;
+}
