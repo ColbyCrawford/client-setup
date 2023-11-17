@@ -1,7 +1,11 @@
 const nextButton = document.getElementById("next-button")
 const backButton = document.getElementById("back-button")
+const formHeadlinesArray = 
+Array.from(document.querySelectorAll(".client-form__headline"))
+const formContentsArray = 
+Array.from(document.querySelectorAll(".client-form__content"))
 
-const steps = [1, 2, 3, 4]
+changeStep()
 
 nextButton.addEventListener("click", () => {
     let currentStep = getCurrentStep()
@@ -10,6 +14,7 @@ nextButton.addEventListener("click", () => {
     if (nextStep != null) {
         currentStep.removeAttribute("aria-current")
         nextStep.setAttribute("aria-current", "step")
+        changeStep()
     }
 })
 
@@ -20,6 +25,7 @@ backButton.addEventListener("click", () => {
     if (prevStep != null) {
         currentStep.removeAttribute("aria-current")
         prevStep.setAttribute("aria-current", "step")
+        changeStep()
     }
 })
 
@@ -27,5 +33,26 @@ function getCurrentStep() {
     return document.querySelector("[aria-current='step']")
 }
 
+
+function getCurrentStepIndex() {
+    let stepElement = getCurrentStep()
+
+    for (let i = 0; i < formHeadlinesArray.length; i++) {
+        if (stepElement === formHeadlinesArray[i]) {
+            return i
+        }
+    }
+}
+
+function changeStep() {
+    let currentStepIndex = getCurrentStepIndex()
+    for (let i = 0; i < formContentsArray.length; i++) {
+        if (i !== currentStepIndex) {
+            formContentsArray[i].style.display = "none"
+        } else {
+            formContentsArray[i].style.display = "block"
+        }
+    }
+}
 
 
