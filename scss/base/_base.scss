@@ -14,7 +14,8 @@
 
 }
 
-input {
+input,
+select {
     inline-size: 100%;
     padding: 0.75rem;
     border: 1px solid hsl(208, 7%, 46%);
@@ -25,6 +26,20 @@ input::placeholder {
     font-size: 1rem;
     color: hsl(208, 7%, 46%);
     opacity: 1;
+}
+
+
+select {
+    position: relative;
+    block-size: 100%;
+    background-image: url("/assets/images/chevron-down.svg");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    cursor: pointer;
+}
+
+select.is-open {
+    background-image: url("/assets/images/chevron-up.svg");
 }
 
 button {

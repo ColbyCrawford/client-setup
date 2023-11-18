@@ -37,31 +37,56 @@
                                     <span class="client-form__heading heading-1">General Info</span>
                                     <p class="body-text-1">Enter your information</p>
                                 </header>
-                                <form action="#">
-                                    <input 
-                                    type="text" 
-                                    name="firstName"
-                                    placeholder="First Name">
-                                    <input 
-                                    type="text" 
-                                    name="lastName"
-                                    placeholder="Last Name">
-                                    <input 
-                                    type="email"
-                                    name="email"
-                                    placeholder="Email">
-                                    <input 
-                                    type="text" 
-                                    name="phoneNumber"
-                                    placeholder="Phone Number">
-                                    <input 
-                                    type="text" 
-                                    name="business"
-                                    placeholder="Business">
-                                    <input 
-                                    type="text" 
-                                    name="country"
-                                    placeholder="Country">
+                                <form id="general-info-form" action="/">
+                                    <div class="input-control">
+                                        <input
+                                        id="first-name"
+                                        name="first-name"
+                                        type="text"
+                                        placeholder="First Name">
+                                        <div class="input-error"></div>
+                                    </div>
+                                    <div class="input-control">
+                                        <input
+                                        id="last-name"
+                                        name="last-name"
+                                        type="text"
+                                        placeholder="Last Name">
+                                        <div class="input-error"></div>
+                                    </div>
+                                    <div class="input-control">
+                                        <input
+                                        id="email"
+                                        name="email"
+                                        type="text"
+                                        placeholder="Email">
+                                        <div class="input-error"></div>
+                                    </div>
+                                    <div class="input-control">
+                                        <input
+                                        id="phone-number"
+                                        name="phone-number"
+                                        type="text"
+                                        placeholder="(201) 555-5555">
+                                        <div class="input-error"></div>
+                                    </div>
+                                    <div class="input-control">
+                                        <input
+                                        id="company"
+                                        name="company"
+                                        type="text"
+                                        placeholder="Company">
+                                        <div class="input-error"></div>
+                                    </div>
+                                    <div class="input-control">
+                                        <select name="country" id="country">
+                                            <option value="United States">United states</option>
+                                            <option value="United Kingdom">United Kingdom</option>
+                                            <option value="Japan">Japan</option>
+                                            <option value="Yemen">Yemen</option>
+                                        </select>
+                                        <div class="input-error"></div>
+                                    </div>
                                 </form>
                             </div>
                             <div id="written-content" class="client-form__content">
@@ -105,5 +130,6 @@
     </main>
 
     <script src="/js/main.js"></script>
+    <script defer src="/js/forms.js"></script>
 </body>
 </html>

@@ -564,7 +564,8 @@ body {
     --container-max-width: 75rem;
   }
 }
-input {
+input,
+select {
   inline-size: 100%;
   padding: 0.75rem;
   border: 1px solid hsl(208, 7%, 46%);
@@ -581,6 +582,19 @@ input::placeholder {
   font-size: 1rem;
   color: hsl(208, 7%, 46%);
   opacity: 1;
+}
+
+select {
+  position: relative;
+  block-size: 100%;
+  background-image: url("/assets/images/chevron-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  cursor: pointer;
+}
+
+select.is-open {
+  background-image: url("/assets/images/chevron-up.svg");
 }
 
 button {
@@ -723,6 +737,20 @@ summary::-webkit-details-marker {
 /* ========= */
 /*   FORMS   */
 /* ========= */
+.input-control.success input {
+  border-color: #08CA33;
+}
+
+.input-control.error input {
+  border-color: #E0155C;
+}
+
+.input-control .input-error {
+  color: #E0155C;
+  font-size: 0.875rem;
+  line-height: 1.42857;
+}
+
 #general-info form {
   display: flex;
   flex-wrap: wrap;

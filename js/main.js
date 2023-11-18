@@ -1,3 +1,4 @@
+const selectElementsArray = Array.from(document.querySelectorAll("select"))
 const nextButton = document.getElementById("next-button")
 const backButton = document.getElementById("back-button")
 const formHeadlinesArray = 
@@ -6,6 +7,12 @@ const formContentsArray =
 Array.from(document.querySelectorAll(".client-form__content"))
 
 changeStep()
+
+selectElementsArray.forEach((element) => {
+    element.addEventListener("click", () => {
+        element.classList.toggle("is-open")
+    })
+})
 
 nextButton.addEventListener("click", () => {
     let currentStep = getCurrentStep()

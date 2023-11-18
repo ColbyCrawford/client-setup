@@ -115,6 +115,20 @@
 /* ========= */
 /*   FORMS   */
 /* ========= */
+.input-control.success input {
+    border-color: #08CA33;
+}
+
+.input-control.error input {
+    border-color: #E0155C;
+}
+
+.input-control .input-error {
+    color: #E0155C;
+    font-size: 0.875rem;  // 14px
+    line-height: 1.42857; // 20px
+}
+
 #general-info form {
     display: flex;
     flex-wrap: wrap;
