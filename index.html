@@ -37,7 +37,7 @@
                                     <span class="client-form__heading heading-1">General Info</span>
                                     <p class="body-text-1">Enter your information</p>
                                 </header>
-                                <form id="general-info-form" action="/">
+                                <form id="general-info-form">
                                     <div class="input-control">
                                         <input
                                         id="first-name"
@@ -118,7 +118,11 @@
                             <span class="icon-chevron-left icon-md"></span>
                             <span>Back</span>
                         </button>
-                        <button id="next-button" class="button">
+                        <button 
+                        id="next-button" 
+                        class="button" 
+                        type="submit" 
+                        form="general-info-form">
                             <span>Next Step</span>
                             <span class="icon-chevron-right icon-md"></span>
                         </button>
@@ -130,6 +134,7 @@
     </main>
 
     <script src="/js/main.js"></script>
-    <script defer src="/js/forms.js"></script>
+    <script defer src="/js/forms.js" type="module"></script>
+    <script defer src="/js/database.js" type="module"></script>
 </body>
 </html>

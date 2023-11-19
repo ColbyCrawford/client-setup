@@ -38,6 +38,12 @@ select {
     cursor: pointer;
 }
 
+option {
+    background-color: #FFF;
+    border: none;
+    padding: 1rem;
+}
+
 select.is-open {
     background-image: url("/assets/images/chevron-up.svg");
 }

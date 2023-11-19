@@ -1,4 +1,4 @@
-const generalInfoForm = document.getElementById("general-info-form")
+export const generalInfoForm = document.getElementById("general-info-form")
 const firstName = document.getElementById("first-name")
 const lastName = document.getElementById("last-name")
 const email = document.getElementById("email")
@@ -63,7 +63,7 @@ email.addEventListener("input", () => {
 })
 
 
-const companyValue = company.value.trim()
+
 const countryValue = country.value.trim()
 
 phoneNumber.addEventListener("keydown", (e) => {
@@ -89,6 +89,15 @@ phoneNumber.addEventListener("keydown", (e) => {
         setSuccess(phoneNumber)
     } else if (phoneNumberLength >= 10) {
         e.preventDefault()
+    }
+})
+
+company.addEventListener("input", () => {
+    const companyValue = company.value.trim()
+    if (companyValue === "") {
+        setError(company, "Company is required")
+    } else {
+        setSuccess(company)
     }
 })
 
