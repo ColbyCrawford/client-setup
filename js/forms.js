@@ -1,10 +1,10 @@
-export const generalInfoForm = document.getElementById("general-info-form")
 const firstName = document.getElementById("first-name")
 const lastName = document.getElementById("last-name")
 const email = document.getElementById("email")
 const phoneNumber = document.getElementById("phone-number")
 const company = document.getElementById("company")
 const country = document.getElementById("country")
+
 
 const setError = (element, message) => {
     const inputControl = element.parentElement
@@ -62,9 +62,6 @@ email.addEventListener("input", () => {
     }
 })
 
-
-
-const countryValue = country.value.trim()
 
 phoneNumber.addEventListener("keydown", (e) => {
     const phoneNumberValue = phoneNumber.value.trim()

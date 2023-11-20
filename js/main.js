@@ -1,8 +1,7 @@
+import { getCurrentStep, formHeadlinesArray, nextButton } from "/js/utilities.js"
+
 const selectElementsArray = Array.from(document.querySelectorAll("select"))
-const nextButton = document.getElementById("next-button")
 const backButton = document.getElementById("back-button")
-const formHeadlinesArray = 
-Array.from(document.querySelectorAll(".client-form__headline"))
 const formContentsArray = 
 Array.from(document.querySelectorAll(".client-form__content"))
 
@@ -38,9 +37,7 @@ backButton.addEventListener("click", () => {
     }
 })
 
-function getCurrentStep() {
-    return document.querySelector("[aria-current='step']")
-}
+
 
 
 function getCurrentStepIndex() {
