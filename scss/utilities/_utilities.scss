@@ -1,3 +1,11 @@
 .u-color-secondary {
-    color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%) !important;
+}
+
+.u-color-dark {
+    color: #212529;
+}
+
+.u-bold {
+    font-weight: 700 !important;
 }

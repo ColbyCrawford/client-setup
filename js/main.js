@@ -22,6 +22,7 @@ nextButton.addEventListener("click", () => {
         currentStep.setAttribute("data-complete", "true")
         nextStep.setAttribute("aria-current", "step")
         changeStep()
+        syncFormToNextButton()
     }
 })
 
@@ -34,11 +35,19 @@ backButton.addEventListener("click", () => {
         prevStep.removeAttribute("data-complete")
         prevStep.setAttribute("aria-current", "step")
         changeStep()
+        syncFormToNextButton()
     }
 })
 
 
+function syncFormToNextButton() {
+    let formName = getCurrentStep().textContent.toLowerCase()
+    formName = formName.replaceAll(" ", "-")
 
+    setTimeout(() => {
+        nextButton.setAttribute("form", `${formName}-form`)
+    }, "1000")
+}
 
 function getCurrentStepIndex() {
     let stepElement = getCurrentStep()

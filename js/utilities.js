@@ -7,3 +7,5 @@ export const formHeadlinesArray = Array.from(document.querySelectorAll(".client-
 export const generalInfoForm = document.getElementById("general-info-form")
 
 export const nextButton = document.getElementById("next-button")
+
+export const formsArray = Array.from(document.querySelectorAll("[data-form]"))

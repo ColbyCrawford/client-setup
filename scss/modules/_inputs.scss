@@ -1,0 +1,27 @@
+.input-text--large {
+    padding-block-end: 5.25rem;
+}
+
+.file-dropper {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: center;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='4' ry='4' stroke='%23333' stroke-width='1' stroke-dasharray='5%2c 10' stroke-dashoffset='0' stroke-linecap='round'/%3e%3c/svg%3e");
+    border-radius: 4px;
+    padding-block: 1rem;
+    cursor: pointer;
+}
+
+.file-dropper__text {
+    font-size: 1.25rem;
+}
+
+.file-dropper__text > span {
+    font-weight: 700;
+    color: #212529;
+}
+
+.file-dropper__icon {
+    color: #212529;
+}

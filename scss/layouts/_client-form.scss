@@ -34,6 +34,7 @@
     gap: 0.75rem;
     align-items: center;
     justify-content: center;
+    color: #ADB5BD;
 }
 
 .client-form__headline::before {
@@ -65,6 +66,7 @@
 
 .client-form__heading {
     margin-block-end: 0.75rem;
+    color: hsl(210, 11%, 15%);
 }
 
 .client-form__eyebrow {
@@ -73,6 +75,10 @@
     line-height: 1.7777;
     color: #ADB5BD;
     margin-block-end: 0.25rem;
+}
+
+.client-form__desc {
+    text-align: center;
 }
 
 .client-form__controls {
@@ -129,15 +135,19 @@
     line-height: 1.42857; // 20px
 }
 
-#general-info form {
+#general-info-form {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
 
-#general-info form > * {
+#general-info-form > .input-control {
     flex-basis: 45%;
     flex-grow: 1;
+}
+
+#written-content-form > .input-control:not(:last-child){
+    margin-block-end: 30px;
 }
 
 

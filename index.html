@@ -25,7 +25,8 @@
                 <div class="client-form">
                     <div class="client-form__main">
                         <div class="client-form__headlines">
-                            <span class="client-form__headline heading-5" aria-current="step">General Info</span>
+                            <span class="client-form__headline
+                            heading-5" aria-current="step">General Info</span>
                             <span class="client-form__headline heading-5">Written Content</span>
                             <span class="client-form__headline heading-5">Media Content</span>
                             <span class="client-form__headline heading-5">Confirm Content</span>
@@ -35,9 +36,9 @@
                                 <header class="client-form__header">
                                     <span class="client-form__eyebrow">Step 1</span>
                                     <span class="client-form__heading heading-1">General Info</span>
-                                    <p class="body-text-1">Enter your information</p>
+                                    <p class="client-form__desc body-text-1">Enter your information</p>
                                 </header>
-                                <form id="general-info-form">
+                                <form id="general-info-form" data-form>
                                     <div class="input-control">
                                         <input
                                         id="first-name"
@@ -93,23 +94,91 @@
                                 <header class="client-form__header">
                                     <span class="client-form__eyebrow">Step 2</span>
                                     <span class="client-form__heading heading-1">Written Content</span>
-                                    <p class="body-text-1">This information will help us design and write copy
+                                    <p class="client-form__desc body-text-1">This information will help us design and write copy
                                     that appeals to your target audience and the search engines.</p>
                                 </header>
+                                <form id="written-content-form" data-form>
+                                    <div class="input-control">
+                                        <label for="wc-q1">What does your business do?</label>
+                                        <input
+                                        id="wc-q1"
+                                        name="wc-q1"
+                                        class="input-text--large"
+                                        type="text"
+                                        placeholder="Your response">
+                                        <div class="input-error"></div>
+                                    </div>
+                                    <div class="input-control">
+                                        <label for="wc-q2">What is your brand’s tone of voice?</label>
+                                        <input
+                                        id="wc-q2"
+                                        name="wc-q2"
+                                        class="input-text--large"
+                                        type="text"
+                                        placeholder="Your response">
+                                        <div class="input-error"></div>
+                                    </div>
+                                    <div class="input-control">
+                                        <label for="wc-q3">Any keywords or phrases your main audience my search for when looking for a website like yours?</label>
+                                        <input
+                                        id="wc-q3"
+                                        name="wc-q3"
+                                        class="input-text--large"
+                                        type="text"
+                                        placeholder="Your response">
+                                        <div class="input-error"></div>
+                                    </div>
+                                    <div class="input-control">
+                                        <label for="wc-q4">Who is your target audience?</label>
+                                        <input
+                                        id="wc-q4"
+                                        name="wc-q4"
+                                        class="input-text--large"
+                                        type="text"
+                                        placeholder="Your response">
+                                        <div class="input-error"></div>
+                                    </div>
+                                    <div class="input-control">
+                                        <label for="wc-q5">What value do you want visitors to gain when they come to your new site?</label>
+                                        <input
+                                        id="wc-q5"
+                                        name="wc-q5"
+                                        class="input-text--large"
+                                        type="text"
+                                        placeholder="Your response">
+                                        <div class="input-error"></div>
+                                    </div>
+                                </form>
                             </div>
                             <div id="media-content" class="client-form__content">
                                 <header class="client-form__header">
                                     <span class="client-form__eyebrow">Step 3</span>
                                     <span class="client-form__heading heading-1">Media Content</span>
-                                    <p class="body-text-1">Add the images needed for each section for your new site. Please upload the highest quality photos possible.</p>
+                                    <p class="client-form__desc body-text-1">Add the images needed for each section for your new site. Please upload the highest quality photos possible.</p>
                                 </header>
+                                <form id="media-content-form" data-form>
+                                    <div class="input-control">
+                                        <label for="mc-1">Upload at least 3 testimonial images</label>
+                                        <input
+                                        id="mc-1"
+                                        name="mc-1"
+                                        type="file"
+                                        hidden>
+                                        <div class="file-dropper">
+                                        <span class="file-dropper__icon icon-upload icon-lg"></span>
+                                        <p class="file-dropper__text">Drop items here or <span>Browse Files</span></p>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                             <div id="confirm-content" class="client-form__content">
                                 <header class="client-form__header">
                                     <span class="client-form__eyebrow">Step 4</span>
                                     <span class="client-form__heading heading-1">Confirm Content</span>
-                                    <p class="body-text-1">Confirm that all the data you summited is correct.</p>
+                                    <p class="client-form__desc body-text-1">Confirm that all the data you summited is correct.</p>
                                 </header>
+                                <form id="confirm-content-form" data-form>
+                                </form>
                             </div>
                         </div>
                     </div>

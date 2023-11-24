@@ -5,7 +5,6 @@ const phoneNumber = document.getElementById("phone-number")
 const company = document.getElementById("company")
 const country = document.getElementById("country")
 
-
 const setError = (element, message) => {
     const inputControl = element.parentElement
     const errorDisplay = inputControl.querySelector(".input-error")
